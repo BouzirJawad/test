@@ -1,0 +1,12 @@
+{
+  "name": "microservices-app",
+  "scripts": {
+    "start:gateway": "node",
+    "start:user": "node",
+    "start:product": "node",
+    "start:all": "concurrently \"npm run start:gateway\" \"npm run start:user\" \"npm run start:product\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
